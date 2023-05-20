@@ -48,7 +48,7 @@ export function NewMemoryForm() {
   }
 
   return (
-    <form onSubmit={handleCreateMemory} className="flex h-full flex-col gap-2">
+    <form onSubmit={handleCreateMemory} className="flex flex-1 flex-col gap-2">
       <div className="flex items-center gap-4">
         <label
           htmlFor="media"
@@ -78,7 +78,7 @@ export function NewMemoryForm() {
       <textarea
         name="content"
         spellCheck={false}
-        className="h-full w-full resize-none rounded border-0 bg-transparent p-0 text-lg leading-relaxed text-gray-100 placeholder:text-gray-400 focus:ring-0"
+        className="w-full flex-1 resize-none rounded border-0 bg-transparent p-0 text-lg leading-relaxed text-gray-100 placeholder:text-gray-400 focus:ring-0"
         placeholder="Fique livre para adicionar fotos, vídeos e relatos sobre essa experiência que você quer lembrar para sempre."
       />
 
